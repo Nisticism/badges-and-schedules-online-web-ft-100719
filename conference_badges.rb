@@ -19,5 +19,6 @@ def assign_rooms(name_list)
   end
 end
 
-def printer(badges)
+def printer(names)
+  
   
