@@ -14,7 +14,7 @@ end
 
 def assign_rooms(name_list)
   assignment_list = []
-  7.times do |num|
+  7.times.each_with_index do |num, |
     assignment_list.push("Hello, #{name_list[num]}! You'll be assigned to room #{num + 1}")
   end
 end
