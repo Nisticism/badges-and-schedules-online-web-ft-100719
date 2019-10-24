@@ -17,8 +17,18 @@ def assign_rooms(name_list)
   7.times do |num|
     assignment_list.push("Hello, #{name_list[num]}! You'll be assigned to room #{num + 1}")
   end
+  assignment_list
 end
 
-def printer(names)
-  
+def printer(name_list)
+  badges = batch_badge_creator(name_list)
+  assignments = assign_rooms(name_list)
+  counter = 0
+  name_list.length.times do
+    puts badges[counter]
+    puts assignments[counter]
+    counter += 1
+  end
+end
+
   
